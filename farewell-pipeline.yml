@@ -197,6 +197,17 @@ stages:
                 Write-Host "Go forth and encrypt all the things!"
 
           - task: PowerShell@2
+            displayName: '👽 Message from Nelson'
+            inputs:
+              targetType: 'inline'
+              script: |
+                Write-Host "##[section]From: Nelson (Extraterrestrial Interloper)"
+                Write-Host "Greetings Matalan team! In observing Muhammad"
+                Write-Host "I see an Intergalactic Rarity Class S teammate"
+                Write-Host "May your deployments and legend echo through the stars!"
+                Write-Host "Safe travels through the cosmos, Muhammad! 👾"
+
+          - task: PowerShell@2
             displayName: '🛠️ Message from Ore'
             inputs:
               targetType: 'inline'
@@ -323,7 +334,7 @@ stages:
               targetType: 'inline'
               script: |
                 Write-Host ""
-                Write-Host "##[section]===========================================" 
+                Write-Host "##[section]==========================================="
                 Write-Host "##[successbanner]FAREWELL MUHAMMAD - MAY YOUR BUILDS ALWAYS PASS!"
                 Write-Host "##[section]==========================================="
                 Write-Host ""
@@ -334,7 +345,7 @@ stages:
                 Write-Host "Remember: We're just a kubectl exec away! 🚀"
                 Write-Host ""
                 Write-Host "##[warning]Pipeline complete. Tissue buffer overflow detected."
-                
+
 # Post-deployment notes:
 # - This pipeline will remain in our repository forever
 # - Re-run whenever we miss Muhammad
