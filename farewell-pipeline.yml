@@ -113,11 +113,10 @@ stages:
             inputs:
               targetType: 'inline'
               script: |
-                Write-Host "##[section]From: Joe (Infrastructure Ninja)"
-                Write-Host "Remember that time we accidentally deleted prod?"
-                Write-Host "Just kidding - that was the other team 😂"
-                Write-Host "Your monitoring setup saved us countless times"
-                Write-Host "Go make their infrastructure legendary!"
+                Write-Host "##[section]From: Joe (Average web developer)"
+                Write-Host "Hey Muhammed, all the best in your new role."
+                Write-Host "I'll miss our Friday morning scrambles trying to get screens ready for demo!"
+                Write-Host "Take care bro"
 
           - task: PowerShell@2
             displayName: '👩‍🔬 Message from Yasemin'
@@ -147,6 +146,7 @@ stages:
               targetType: 'inline'
               script: |
                 Write-Host "##[section]From: Dane (Metrics Master)"
+                Write-Host "All the best Muhammad!"
                 Write-Host "The dashboard will never look the same without you"
                 Write-Host "Who else will help me understand why our graphs"
                 Write-Host "look like abstract art? 📈📉"
@@ -195,6 +195,28 @@ stages:
                 Write-Host "is adequate security! 🔒"
                 Write-Host "Your security-first mindset kept us safe"
                 Write-Host "Go forth and encrypt all the things!"
+
+          - task: PowerShell@2
+            displayName: '👽 Message from Nelson'
+            inputs:
+              targetType: 'inline'
+              script: |
+                Write-Host "##[section]From: Nelson (Extraterrestrial Interloper)"
+                Write-Host "Greetings Matalan team! In observing Muhammad"
+                Write-Host "I see an Intergalactic Rarity Class S teammate"
+                Write-Host "May your deployments and legend echo through the stars!"
+                Write-Host "Safe travels through the cosmos, Muhammad! 👾"
+
+          - task: PowerShell@2
+            displayName: '🛠️ Message from Ore'
+            inputs:
+              targetType: 'inline'
+              script: |
+                Write-Host "##[section]From: Ore (CI/CD Striker)"
+                Write-Host "Muhammad, your advice was like `terraform init` for my career—"
+                Write-Host "you helped me get started the right way"
+                Write-Host "and reminded me that even failed builds are just learning in disguise."
+                Write-Host "Wishing you smooth, on-target deploys on your next adventure! 🚀"
 
   - stage: KnowledgeTransfer
     displayName: '📚 Wisdom Archive'
@@ -312,7 +334,7 @@ stages:
               targetType: 'inline'
               script: |
                 Write-Host ""
-                Write-Host "##[section]===========================================" 
+                Write-Host "##[section]==========================================="
                 Write-Host "##[successbanner]FAREWELL MUHAMMAD - MAY YOUR BUILDS ALWAYS PASS!"
                 Write-Host "##[section]==========================================="
                 Write-Host ""
@@ -323,7 +345,7 @@ stages:
                 Write-Host "Remember: We're just a kubectl exec away! 🚀"
                 Write-Host ""
                 Write-Host "##[warning]Pipeline complete. Tissue buffer overflow detected."
-                
+
 # Post-deployment notes:
 # - This pipeline will remain in our repository forever
 # - Re-run whenever we miss Muhammad
