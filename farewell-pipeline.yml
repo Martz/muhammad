@@ -207,6 +207,17 @@ stages:
                 Write-Host "May your deployments and legend echo through the stars!"
                 Write-Host "Safe travels through the cosmos, Muhammad! 👾"
 
+          - task: PowerShell@2
+            displayName: '🛠️ Message from Ore'
+            inputs:
+              targetType: 'inline'
+              script: |
+                Write-Host "##[section]From: Ore (CI/CD Striker)"
+                Write-Host "Muhammad, your advice was like `terraform init` for my career—"
+                Write-Host "you helped me get started the right way"
+                Write-Host "and reminded me that even failed builds are just learning in disguise."
+                Write-Host "Wishing you smooth, on-target deploys on your next adventure! 🚀"
+
   - stage: KnowledgeTransfer
     displayName: '📚 Wisdom Archive'
     dependsOn: TeamMessages
