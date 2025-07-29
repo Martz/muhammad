@@ -180,10 +180,17 @@ stages:
               targetType: 'inline'
               script: |
                 Write-Host "##[section]From: Elamin (Cloud Navigator)"
-                Write-Host "Muhammad, you turned our AWS bills from"
-                Write-Host "'heart attack inducing' to 'pleasantly optimized'"
-                Write-Host "Your cost optimization skills are legendary"
-                Write-Host "May your new cloud journey be ever-scalable! ☁️"
+                Write-Host "Muhammad, it was an absolute pleasure working with you on IGNITE!"
+                Write-Host "Your DevOps expertise and attention to detail made every deployment smooth."
+                Write-Host "Watching you create those CI/CD pipelines for AKS was like poetry in motion -"
+                Write-Host "you turned our manual chaos into automated brilliance! 🎯"
+                Write-Host ""
+                Write-Host "Working with you has been like having the perfect API -"
+                Write-Host "always reliable, well-documented, and never throwing unexpected errors!"
+                Write-Host "Your positive attitude made every collaboration smooth and productive."
+                Write-Host ""
+                Write-Host "Wishing you amazing adventures in your new role! 🚀"
+                Write-Host "Your new team is getting an invaluable DevOps wizard!"
 
           - task: PowerShell@2
             displayName: '🔐 Message from Afshin'
