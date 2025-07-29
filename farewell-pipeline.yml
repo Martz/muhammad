@@ -261,6 +261,21 @@ stages:
                 Write-Host "    │  next role!                 │"
                 Write-Host "    └─────────────────────────────┘"
 
+          - task: PowerShell@2
+            displayName: '🛠️ Message from Peter'
+            inputs:
+              targetType: 'inline'
+              script: |
+                Write-Host "##[section]From: Peter (Platform Pioneer)"
+                Write-Host "Muhammad you've scripted your final deploy"
+                Write-Host "No more Datadog alerts fo you to destroy"
+                Write-Host "From pipelines to prod, you’ve kept all things tight"
+                Write-Host "Even when AKS gave us a fright"
+                Write-Host "You dockerized dreams, scaled them with flair"
+                Write-Host "Left Terraform footprints everywhere."
+                Write-Host "Now you're off to debug life’s next quest"
+                Write-Host "May your uptime be high, and reliability the best - Good luck! 🚀"
+
   - stage: KnowledgeTransfer
     displayName: '📚 Wisdom Archive'
     dependsOn: TeamMessages
