@@ -196,6 +196,28 @@ stages:
                 Write-Host "Your security-first mindset kept us safe"
                 Write-Host "Go forth and encrypt all the things!"
 
+          - task: PowerShell@2
+            displayName: '🚀 Message from Adam H'
+            inputs:
+              targetType: 'inline'
+              script: |
+                Write-Host "##[section]From: Adam H"
+                Write-Host ""
+                Write-Host "    ╔══════════════════════════════════╗"
+                Write-Host "    ║     GOOD LUCK & FAREWELL! 🚀     ║"
+                Write-Host "    ╚══════════════════════════════════╝"
+                Write-Host ""
+                Write-Host "Muhammad, it was great working with you on your first project."
+                Write-Host "You came in as a platform associate and learned so much -"
+                Write-Host "not just DevOps but fullstack development too."
+                Write-Host "You tackled every challenge and delivered solid work."
+                Write-Host "Thanks for being curious, reliable, and always willing to learn."
+                Write-Host ""
+                Write-Host "    ┌─────────────────────────────┐"
+                Write-Host "    │  Best of luck in your       │"
+                Write-Host "    │  next role!                 │"
+                Write-Host "    └─────────────────────────────┘"
+
   - stage: KnowledgeTransfer
     displayName: '📚 Wisdom Archive'
     dependsOn: TeamMessages
