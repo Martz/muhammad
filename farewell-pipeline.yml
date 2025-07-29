@@ -80,11 +80,13 @@ stages:
             inputs:
               targetType: 'inline'
               script: |
-                Write-Host "##[section]From: Tahmid (Pipeline Whisperer)"
-                Write-Host "Remember when we spent 6 hours debugging"
-                Write-Host "only to find it was a missing semicolon?"
-                Write-Host "Those are the moments I'll miss most."
-                Write-Host "May your new pipelines always be green! 💚"
+                Write-Host "##[section]From: Tahmid (AI Whisperer)"
+                Write-Host "Muhammad — thank you for being there throughout my journey into the company."
+                Write-Host "From replacing you on SMARTY to teaming up on Matalan, always ready to help, support, and guide without hesitation."
+                Write-Host "You showed me the ropes, starting with CapGenius, to everything else and always had time for questions, a PR review, or a quick check-in."
+                Write-Host "Honestly, you’ve been like a brother to me here, and it's going to feel different when you don't nominate me for standup"
+                Write-Host "Wishing you nothing but success in your next role, they’re gaining someone truly great."
+                Write-Host "Achaaa... (translation: ‘okaaaaay’) 😂"
 
           - task: PowerShell@2
             displayName: '🤖 Message from the CI/CD Bots'
