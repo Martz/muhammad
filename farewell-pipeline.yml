@@ -191,10 +191,10 @@ stages:
               targetType: 'inline'
               script: |
                 Write-Host "##[section]From: Afshin (Security Sentinel)"
-                Write-Host "Finally, someone who doesn't think 'password123'"
-                Write-Host "is adequate security! 🔒"
-                Write-Host "Your security-first mindset kept us safe"
-                Write-Host "Go forth and encrypt all the things!"
+                Write-Host "Don't know how many screens will be demonstrated locally, because the King of debugging is leaving us"
+                Write-Host "Thanks for all the times you saved us right one minute before the demo"
+                Write-Host "How lucky your new team is to have you!"
+                Write-Host "All the best 🤴 KING Muhammad 🤴"
 
           - task: PowerShell@2
             displayName: '👽 Message from Nelson'
