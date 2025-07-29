@@ -147,6 +147,7 @@ stages:
               targetType: 'inline'
               script: |
                 Write-Host "##[section]From: Dane (Metrics Master)"
+                Write-Host "Happy Birthday Muhammad! 🎂🎉"
                 Write-Host "The dashboard will never look the same without you"
                 Write-Host "Who else will help me understand why our graphs"
                 Write-Host "look like abstract art? 📈📉"
