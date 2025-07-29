@@ -124,10 +124,10 @@ stages:
               targetType: 'inline'
               script: |
                 Write-Host "##[section]From: Yasemin (Quality Guardian)"
-                Write-Host "Muhammad, you taught me that 'works on my machine'"
-                Write-Host "is not acceptable test coverage! 😄"
-                Write-Host "Your attention to detail made us all better"
-                Write-Host "May your new tests always pass on the first run!"
+                Write-Host "Muhammad, you always find and fix issues in no time"
+                Write-Host "You're calm, supportive, and always approachable"
+                Write-Host "Your new team is very lucky to have you"
+                Write-Host "Fair winds and following seas! 🚢"
 
           - task: PowerShell@2
             displayName: '👑 Message from Duncan'
