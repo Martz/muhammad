@@ -217,6 +217,20 @@ stages:
                 Write-Host "you helped me get started the right way"
                 Write-Host "and reminded me that even failed builds are just learning in disguise."
                 Write-Host "Wishing you smooth, on-target deploys on your next adventure! 🚀"
+          
+          - task: PowerShell@2
+            displayName: '🛠️ Message from Yassin'
+            inputs:
+              targetType: 'inline'
+              script: |
+                Write-Host "##[section]From: Yassin (Croydon's finest)"
+                Write-Host "Muhammad (aka Luton's finest),"
+                Write-Host "It saddens me that I won't able to introduce you again in a meeting"
+                Write-Host "with the infamous words of the Stacey Dooley Bury Park Luton scene."
+                Write-Host "But honestly it was an absolute pleasure to get to know you and work with you."
+                Write-Host "You are a really driven and hard-working person"
+                Write-Host "who I am confident will go very far in your tech career journey."
+                Write-Host "All the best in your new role! 🚀"
 
   - stage: KnowledgeTransfer
     displayName: '📚 Wisdom Archive'
