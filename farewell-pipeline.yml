@@ -278,6 +278,19 @@ stages:
                 Write-Host "Now you're off to debug life’s next quest"
                 Write-Host "May your uptime be high, and reliability the best - Good luck! 🚀"
 
+          - task: PowerShell@2
+            displayName: '🛠️ Message from Sandhya'
+            inputs:
+              targetType: 'inline'
+              script: |
+                Write-Host "##[section]From: Sandhya"
+                Write-Host "From grad to guru, you’ve scaled with grace 🧑‍💻🚀"
+                Write-Host "In pipelines, scripts, you found your place 🛠️📦"
+                Write-Host "May uptime bless your every quest ⏱️✨"
+                Write-Host "In code and life, we wish you best 💻🌍"
+                Write-Host "With talent like yours, you’re bound to go far 🌟💫"
+                Write-Host "Goodbye, Muhammed — we know you’ll shine like a star! 👋⭐"
+
   - stage: KnowledgeTransfer
     displayName: '📚 Wisdom Archive'
     dependsOn: TeamMessages
